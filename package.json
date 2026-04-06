@@ -1,0 +1,23 @@
+{
+  "name": "bidossessi-enterprise",
+  "version": "1.0.0",
+  "description": "BIDOSSESSI Enterprise - Agence de graphisme, infographie, sérigraphie et solutions créatives à Cotonou, Bénin",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"No tests configured\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/precieuxAyelesso/BIDOSSESSI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/precieuxAyelesso/BIDOSSESSI/issues"
+  },
+  "homepage": "https://github.com/precieuxAyelesso/BIDOSSESSI#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
