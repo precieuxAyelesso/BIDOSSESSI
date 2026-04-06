@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BIDOSSESSI Enterprise - Agence de graphisme, infographie, sérigraphie et solutions créatives à Cotonou, Bénin.">
+    <title>BIDOSSESSI Enterprise | Créativité & Excellence Visuelle</title>
+
+    <!-- Tailwind CSS v4 Play CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Playfair Display', sans-serif;
+        }
+        
+        .hero-bg {
+            background-image: url('images/fond3.jpeg');
+            background-size: cover;        /* Remplit tout l'écran sans déformation */
+            background-position: center;   /* Centre l'image */
+            background-repeat: no-repeat;
+        }
+        
+        /* Effet fixe sur grand écran pour un rendu plus premium */
+        @media (min-width: 1024px) {
+            .hero-bg {
+                background-attachment: fixed;
+            }
+        }
+        
+        .nav-scrolled {
+            background-color: rgba(255, 193, 7, 0.98) !important;
+            backdrop-filter: blur(12px);
+        }
+        
+        .section-padding {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+        
+        .portfolio-img {
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .portfolio-card:hover .portfolio-img {
+            transform: scale(1.08);
+        }
+    </style>
+</head>
+<body class="bg-zinc-50 text-zinc-900">
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-amber-400 transition-all duration-300">
+        <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold tracking-tighter heading-font text-zinc-900">BIDOSSESSI ENTERPRISE</a>
+            
+            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                <a href="#accueil" class="hover:text-amber-700 transition-colors">Accueil</a>
+                <a href="#apropos" class="hover:text-amber-700 transition-colors">À propos</a>
+                <a href="#services" class="hover:text-amber-700 transition-colors">Services</a>
+                <a href="#realisations" class="hover:text-amber-700 transition-colors">Réalisations</a>
+                <a href="#contact" class="hover:text-amber-700 transition-colors">Contact</a>
+            </div>
+            
+        </div>
+    </nav>
+
+    <section id="accueil" class="hero-bg min-h-screen flex items-center relative text-white">
+        <!-- Overlay sombre pour meilleure lisibilité -->
+        <div class="absolute inset-0 bg-black/60"></div>
+        
+        <div class="max-w-screen-2xl mx-auto px-8 relative z-10 pt-20">
+            <div class="max-w-3xl">
+                <h1 class="heading-font text-6xl md:text-7xl leading-none font-bold tracking-tighter mb-6">
+                    Vos idées.<br>Notre créativité.<br><span class="text-amber-400">Votre succès.</span>
+                </h1>
+                
+                <p class="text-xl text-white/90 max-w-lg mb-10">
+                    Graphisme, infographie, sérigraphie et impression de qualité premium. 
+                    Nous donnons vie à votre vision avec élégance et précision.
+                </p>
+                
+                <div class="flex flex-wrap gap-4">
+                    <a href="#realisations" 
+                       class="bg-amber-400 hover:bg-amber-300 transition-all text-zinc-900 font-semibold px-8 py-4 rounded-2xl flex items-center gap-x-3">
+                        Découvrir nos réalisations
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" 
+                       class="border border-white/80 hover:bg-white/10 transition-all font-medium px-8 py-4 rounded-2xl">
+                        Commencer un projet
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="apropos" class="section-padding bg-white">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-amber-600 font-semibold tracking-widest text-sm">DEPUIS 2021</span>
+                    <h2 class="heading-font text-5xl font-bold tracking-tighter mt-3 mb-6 leading-none">
+                        Une passion<br>devenue entreprise
+                    </h2>
+                    <p class="text-lg text-zinc-600 leading-relaxed">
+                        Notre philosophie repose sur la création de designs qui non seulement attirent l'œil, mais qui transmettent aussi efficacement votre message. Nous combinons créativité artistique, expertise technique et une compréhension approfondie des besoins de nos clients pour produire des résultats exceptionnels.
+                    </p>
+                    <div class="mt-10 grid grid-cols-3 gap-8">
+                        <div>
+                            <div class="text-4xl font-bold text-amber-500">5+</div>
+                            <div class="text-sm text-zinc-500 mt-1">Années d’expérience</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold text-amber-500">150+</div>
+                            <div class="text-sm text-zinc-500 mt-1">Projets réalisés</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold text-amber-500">98%</div>
+                            <div class="text-sm text-zinc-500 mt-1">Clients satisfaits</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="images/fond.jpeg" 
+                         alt="Équipe BIDOSSESSI" 
+                         class="rounded-3xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section-padding bg-zinc-900 text-white">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <div class="text-center mb-16">
+                <span class="text-amber-400 font-medium">NOS EXPERTISES</span>
+                <h2 class="heading-font text-5xl font-bold tracking-tighter mt-3">Des services sur mesure</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-zinc-800/50 p-8 rounded-3xl group hover:bg-amber-400 hover:text-zinc-900 transition-all duration-500">
+                    <i class="fas fa-palette text-6xl mb-6 text-amber-400 group-hover:text-zinc-900"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Graphisme & Infographie</h3>
+                    <p class="text-zinc-400 group-hover:text-zinc-700">Logos, branding, flyers, affiches, supports digitaux… Nous créons des identités visuelles fortes et mémorables.</p>
+                </div>
+                <div class="bg-zinc-800/50 p-8 rounded-3xl group hover:bg-amber-400 hover:text-zinc-900 transition-all duration-500">
+                    <i class="fas fa-print text-6xl mb-6 text-amber-400 group-hover:text-zinc-900"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Sérigraphie & Impression</h3>
+                    <p class="text-zinc-400 group-hover:text-zinc-700">Impression professionnelle sur textile, packaging et supports promotionnels avec une finition irréprochable.</p>
+                </div>
+                <div class="bg-zinc-800/50 p-8 rounded-3xl group hover:bg-amber-400 hover:text-zinc-900 transition-all duration-500">
+                    <i class="fas fa-store text-6xl mb-6 text-amber-400 group-hover:text-zinc-900"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Produits Personnalisés</h3>
+                    <p class="text-zinc-400 group-hover:text-zinc-700">Vente en ligne d’articles et cadeaux d’entreprise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RÉALISATIONS -->
+    <section id="realisations" class="section-padding bg-white">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <div class="text-center mb-16">
+                <h2 class="heading-font text-5xl font-bold tracking-tighter">Nos Réalisations</h2>
+                <p class="text-zinc-600 mt-3">Des projets qui parlent d’eux-mêmes</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="portfolio-card group overflow-hidden rounded-3xl bg-white shadow-xl">
+                    <img src="images/graph2.jpeg" class="portfolio-img w-full h-80 object-cover" alt="Branding Restaurant">
+                    <div class="p-6">
+                        <h4 class="font-semibold text-xl">Promotion de tasses</h4>
+                        <p class="text-sm text-zinc-500 mt-1">Logo • Menu • Packaging • Affiches</p>
+                    </div>
+                </div>
+                <div class="portfolio-card group overflow-hidden rounded-3xl bg-white shadow-xl">
+                    <img src="images/seri.jpeg" class="portfolio-img w-full h-80 object-cover" alt="Campagne Festival">
+                    <div class="p-6">
+                        <h4 class="font-semibold text-xl">Sérigaphie textile</h4>
+                        <p class="text-sm text-zinc-500 mt-1">T-shirts • Bannières • Goodies</p>
+                    </div>
+                </div>
+                <div class="portfolio-card group overflow-hidden rounded-3xl bg-white shadow-xl">
+                    <img src="images/vente2.jpeg" class="portfolio-img w-full h-80 object-cover" alt="Identité Visuelle">
+                    <div class="p-6">
+                        <h4 class="font-semibold text-xl">Identité Visuelle – Startup Tech Benin</h4>
+                        <p class="text-sm text-zinc-500 mt-1">Logo • Site • Supports marketing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-padding bg-zinc-900 text-white">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="heading-font text-5xl font-bold tracking-tighter mb-6">Prêt à donner vie<br>à votre projet ?</h2>
+                    <p class="text-zinc-400 text-lg">Discutons ensemble. Nous répondons généralement sous 24h.</p>
+                    
+                    <div class="mt-12 space-y-8">
+                        <div class="flex gap-6">
+                            <i class="fas fa-map-marker-alt text-3xl text-amber-400"></i>
+                            <div>
+                                <div class="font-medium">Kpondehou, Cotonou – Bénin</div>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <i class="fas fa-phone text-3xl text-amber-400"></i>
+                            <div>
+                                <div class="font-medium">+229 01 54 60 97 17</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form id="contactForm" class="bg-zinc-800 p-10 rounded-3xl space-y-6">
+                    <div class="grid grid-cols-2 gap-6">
+                        <input type="text" id="name" placeholder="Nom complet" 
+                               class="bg-zinc-700 border border-transparent focus:border-amber-400 rounded-2xl px-6 py-4 outline-none transition-all">
+                        <input type="email" id="email" placeholder="Email" 
+                               class="bg-zinc-700 border border-transparent focus:border-amber-400 rounded-2xl px-6 py-4 outline-none transition-all">
+                    </div>
+                    <input type="tel" id="phone" placeholder="Téléphone (+229 ...)" 
+                           class="w-full bg-zinc-700 border border-transparent focus:border-amber-400 rounded-2xl px-6 py-4 outline-none transition-all">
+                    <textarea id="message" rows="6" placeholder="Décrivez votre projet..." 
+                              class="w-full bg-zinc-700 border border-transparent focus:border-amber-400 rounded-3xl px-6 py-4 outline-none transition-all resize-none"></textarea>
+                    
+                    <button type="submit"
+                            class="w-full bg-amber-400 hover:bg-amber-300 transition-colors text-zinc-900 font-semibold py-5 rounded-2xl text-lg">
+                        Envoyer le message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white/70 py-16">
+        <div class="max-w-screen-2xl mx-auto px-8 text-center">
+            <p class="text-amber-400 text-xl font-medium mb-2">BIDOSSESSI Enterprise</p>
+            <p>&copy; 2026 – Tous droits réservés. Créativité • Innovation • Excellence</p>
+        </div>
+    </footer>
+
+    <!-- Bouton WhatsApp flottant -->
+    <a href="https://wa.me/2290154609717" target="_blank"
+       class="fixed bottom-8 right-8 bg-green-500 text-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-2xl hover:scale-110 transition-transform text-3xl z-50">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-scrolled', 'shadow-lg');
+            } else {
+                navbar.classList.remove('nav-scrolled', 'shadow-lg');
+            }
+        });
+
+        const form = document.getElementById('contactForm');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert("✅ Merci ! Votre message a été envoyé avec succès.\n\nNous vous contacterons très rapidement.");
+            form.reset();
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
